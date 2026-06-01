@@ -6,7 +6,7 @@
 2. Detect source type adapter (csv/excel/xml/sql).
 3. Standardize schema names and infer data types.
 4. Apply data massage rules (trim, parse, deduplicate, null treatment).
-5. Compute profile + quality score.
+5. Compute profile and quality score.
 6. Save curated dataset and emit dynamic reporting process.
 
 Code path:
@@ -32,7 +32,7 @@ Code path:
 
 ## C. React dashboard build steps (8 steps)
 
-1. Bootstrap app with Vite + React.
+1. Bootstrap app with Vite and React.
 2. Add authentication screen.
 3. Implement drag-and-drop upload component.
 4. Add dataset selection and report period controls.

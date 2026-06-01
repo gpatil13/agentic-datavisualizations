@@ -7,11 +7,7 @@
 | Field | Detail |
 |---|---|
 | Report Title | Agentic AI Data Visualization System: Literature Review, Problem Definition, and Design Overview |
-| Author | [Your Full Name] |
-| Institution | [Your Institution Name] |
-| Course | [Course Name and Code] |
-| Supervisor | [Supervisor Name] |
-| Date | April 29, 2026 |
+| Date | May 29, 2026 |
 | Version | 1.0 |
 
 ---
@@ -224,8 +220,6 @@ The Visualization Agent implements a heuristic scoring model as summarized in Ta
 | Single category column (cardinality ≤ 10) | Pie Chart | +20 |
 | Any numeric column | KPI Widget | +15 |
 
-*Note: Scores are cumulative across applicable conditions. Suggestions are deduplicated and ranked descending by final confidence.*
-
 This scoring model is directly traceable to the literature: the preference for line charts in time-series contexts follows Heer and Shneiderman's (2012) recommendation that temporal data should use position along a common scale. The bar chart preference for categorical comparisons follows Few's (2009) principle that categorical comparisons are most clearly rendered as length-encoded bars.
 
 ### 4.4 Security Architecture
@@ -336,7 +330,7 @@ Initial attempts at PDF export using html2canvas produced low-resolution outputs
 
 The system is functionally complete for all core use cases described in the functional requirements. All backend modules are implemented, tested, and documented. The frontend supports the full upload-to-export workflow. The database schema is stable and supports all required entity relationships. The system is deployed in development configuration and is ready for demonstration.
 
-### 5.4 Upcoming Work
+### 5.4 Future Work
 
 1. Expanded integration and edge-case test coverage.
 2. Production deployment configuration with PostgreSQL and Redis.
@@ -399,4 +393,4 @@ Yao, S., Zhao, J., Yu, D., Du, N., Shafran, I., Narasimhan, K., & Cao, Y. (2023)
 
 ---
 
-*Report Version 1.0 | April 29, 2026 | Agentic AI Data Visualization System*
+*Report Version 1.0 | May 29, 2026 | Agentic AI Data Visualization System*

@@ -480,7 +480,7 @@ Backend: http://localhost:8000 (FastAPI dev server)
 Database: SQLite (local file)
 ```
 
-### Production Architecture (Recommended)
+### Production Architecture
 ```
 ┌─────────────────┐
 │  CDN            │ (Static assets, CSS, JS)
@@ -644,5 +644,4 @@ This architecture is suitable for **enterprise-level e-commerce platforms** requ
 ---
 
 **Document Version:** 1.0
-**Last Updated:** April 28, 2026
-**Architecture Review:** Approved for Production
+**Last Updated:** May 29, 2026

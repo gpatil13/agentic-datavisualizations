@@ -50,7 +50,7 @@ flowchart LR
 
 - Input: report specs, widget configurations, user preference changes.
 - Output: configurable visual analytics board.
-- Methodology: chart rendering + persisted widget customization.
+- Methodology: chart rendering and persisted widget customization.
 
 ## 3. Functional requirements
 
@@ -88,7 +88,7 @@ flowchart LR
 
 - Data protection: encrypted transport in deployment, retention policy.
 - Authentication: token-based access, role-based permissions.
-- User consent: upload UI + policy notice (to be added in production UI).
+- User consent: upload UI and policy notice (to be added in production UI).
 - Fairness: model feedback loop and subgroup validation checks.
 
 ### 5.4 Concrete ethical-security example

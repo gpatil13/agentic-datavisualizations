@@ -161,8 +161,6 @@ Challenges and resolutions:
 3. Securing CRUD routes without overcomplication.
    - Resolved using centralized dependency-based token checks.
 
-## 9. Inline in-text citations
-
 The project scope and milestone planning follow lightweight project management practices (Oguz, 2025; Bergmann, 2021). The modular architecture approach is aligned with software design best practices for maintainability and scaling (Davies, 2024; Letaw, 2024). Ethical and security controls incorporate accepted guidance around privacy, access control, and vulnerability reduction (GDPR, 2016; ISO/IEC 27001, 2022; OWASP, 2021). CI/CD adoption reflects modern software engineering workflows for rapid and reliable releases (Red Hat, 2025; Narasimhan et al., 2025).
 
 ## 10. References (APA 7 subset)

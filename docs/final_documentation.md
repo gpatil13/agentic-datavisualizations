@@ -1,10 +1,8 @@
 # Agentic AI Data Visualization System
-## Final Developer Documentation — End to End
 
 **Version:** 1.0  
-**Date:** April 29, 2026  
-**Author:** [Your Name]  
-**Status:** Production-Ready Prototype
+**Date:** May 29, 2026  
+**Author:** Vaishali Patil
 
 ---
 
@@ -24,12 +22,11 @@
 12. [Testing Strategy](#12-testing-strategy)
 13. [Deployment and DevOps](#13-deployment-and-devops)
 14. [Monitoring and Observability](#14-monitoring-and-observability)
-15. [Demo Guide — Step by Step](#15-demo-guide--step-by-step)
-16. [Presentation Deck Outline](#16-presentation-deck-outline)
-17. [Risks and Limitations](#17-risks-and-limitations)
-18. [Future Roadmap](#18-future-roadmap)
-19. [Milestones and Challenges](#19-milestones-and-challenges)
-20. [Conclusion](#20-conclusion)
+15. [Risks and Limitations](#15-risks-and-limitations)
+16. [Future Roadmap](#16-future-roadmap)
+17. [Milestones and Challenges](#17-milestones-and-challenges)
+18. [Key Challenges Resolved](#18-key-challenges-resolved)
+19. [Conclusion](#19-conclusion)
 
 ---
 
@@ -856,102 +853,8 @@ Sensitive data (passwords, tokens) is masked in all log outputs.
 | Database connection pool | Alert if > 80% utilization |
 | Failed login attempts | Alert if > 10 in 60s (brute-force detection) |
 
-### 14.3 Recommended Monitoring Stack
 
-| Concern | Tool |
-|---|---|
-| Metrics | Prometheus + Grafana |
-| Logs | ELK Stack (Elasticsearch, Logstash, Kibana) |
-| Tracing | Jaeger or Datadog |
-| Alerting | AlertManager or PagerDuty |
-| Uptime | UptimeRobot or Pingdom |
-
----
-
-## 15. Demo Guide — Step by Step
-
-Use this exact sequence for live demonstration to evaluators.
-
-### Step 1 — Introduction (1 minute)
-State the problem: analysts manually clean, configure, and build dashboards from raw files.  
-State the solution: one upload triggers an agent pipeline that cleans data, recommends charts, and builds the dashboard automatically.
-
-### Step 2 — Authentication Demo
-1. Open browser at `http://localhost:5173`
-2. Register a new analyst user
-3. Login and show the JWT token returned in network tab (DevTools)
-4. Show dashboard loads with role-appropriate controls visible
-
-### Step 3 — Dataset Upload
-1. Drag and drop `sample_sales.csv` into the Upload Zone
-2. Show validation message for file accepted
-3. Show dataset appearing in the dataset list
-4. Point out: no manual schema mapping was needed
-
-### Step 4 — Data Quality Panel
-1. Select the uploaded dataset
-2. Show the profiling summary: row count, null percentages, column types
-3. Explain: Data Profiler ran automatically after processing
-
-### Step 5 — Visualization Intelligence
-1. Navigate to chart suggestions for the dataset
-2. Show ranked suggestions: Line chart (85 confidence), Bar chart (70 confidence), etc.
-3. Explain the scoring model briefly: datetime + numeric = line preferred
-
-### Step 6 — Report and Dashboard
-1. Generate a report with monthly aggregation
-2. Show widgets auto-added to the dashboard
-3. Demonstrate changing chart type on a widget
-4. Demonstrate deleting a widget and re-adding
-
-### Step 7 — Export
-1. Select two or three widgets
-2. Click Export to PDF
-3. Show the downloaded PDF with metadata header and charts rendered
-
-### Step 8 — Security Checkpoint
-1. Open Postman or browser network tab
-2. Attempt a protected endpoint without token → show 401
-3. Login as viewer → attempt upload → show 403
-
-### Step 9 — API Documentation
-1. Open `http://localhost:8000/docs`
-2. Walk through the Swagger UI showing all endpoint groups
-3. Show a live API call from Swagger
-
-### Step 10 — Closing Summary
-Summarize: one upload, automated pipeline, dashboard ready, secured access, exportable report.
-
----
-
-## 16. Presentation Deck Outline
-
-Use this structure for a 15-slide deck.
-
-| Slide | Title | Content |
-|---|---|---|
-| 1 | Title | Project name, team, date, institution |
-| 2 | Problem Statement | 3 core gaps with real-world context |
-| 3 | Solution Overview | One-line description, value proposition table |
-| 4 | Architecture Diagram | High-level 5-layer diagram |
-| 5 | End-to-End Data Flow | Pipeline flow from upload to dashboard |
-| 6 | Agent Intelligence | Visualization agent scoring model + table |
-| 7 | Technical Stack | Stack table split by frontend/backend/infra |
-| 8 | Module Design | Key modules with I/O summary table |
-| 9 | Security and Compliance | Auth flow diagram, RBAC matrix |
-| 10 | FR and NFR Mapping | Traceability table (condensed) |
-| 11 | Testing and Quality | Test types, coverage target, key cases |
-| 12 | Deployment | Dev and production architecture diagrams |
-| 13 | Live Demo | Follow demo guide steps 1–10 |
-| 14 | Challenges and Lessons | 3–4 key technical challenges resolved |
-| 15 | Future Roadmap + Q&A | Next enhancements, open for questions |
-
-**Speaker tip for Slide 13:**  
-Open the running application and follow the demo guide exactly. Keep browser DevTools open to show real JWT tokens, API calls, and response payloads.
-
----
-
-## 17. Risks and Limitations
+## 15. Risks and Limitations
 
 | Risk | Impact | Mitigation |
 |---|---|---|
@@ -964,7 +867,7 @@ Open the running application and follow the demo guide exactly. Keep browser Dev
 
 ---
 
-## 18. Future Roadmap
+## 16. Future Roadmap
 
 | Priority | Enhancement | Effort |
 |---|---|---|
@@ -979,9 +882,9 @@ Open the running application and follow the demo guide exactly. Keep browser Dev
 
 ---
 
-## 19. Milestones and Challenges
+## 17. Milestones and Challenges
 
-### 19.1 Milestone Summary
+### 17.1 Milestone Summary
 
 | # | Milestone | Status | Notes |
 |---|---|---|---|
@@ -996,7 +899,7 @@ Open the running application and follow the demo guide exactly. Keep browser Dev
 | M9 | Testing suite | ✅ Completed | pytest, unit + integration |
 | M10 | Final documentation | ✅ Completed | Architecture, API, guides |
 
-### 19.2 Key Challenges Resolved
+### 18 Key Challenges Resolved
 
 **Challenge 1: passlib + bcrypt on Python 3.12 / Windows**  
 bcrypt v5 broke passlib's bcrypt wrapper. Switched to pbkdf2_sha256. Documented in user memory to prevent recurrence.
@@ -1015,7 +918,7 @@ Deeply nested XML structures caused parsing failures. Added recursive normalizat
 
 ---
 
-## 20. Conclusion
+## 19. Conclusion
 
 The Agentic AI Data Visualization System successfully delivers an end-to-end automated analytics platform that addresses the core problems of data fragmentation, manual preprocessing, and slow reporting in e-commerce analytics.
 
@@ -1027,8 +930,6 @@ The architecture is production-aware, modular, and extensible. All core function
 - Generates exportable, shareable report artifacts.
 - Maintains a complete and auditable operation history.
 
-The project demonstrates strong alignment between academic software engineering principles and practical full-stack development, producing a platform that is ready for prototype demonstration and progressive production hardening.
-
 ---
 
-*Final Documentation v1.0 | Agentic AI Data Visualization System | April 29, 2026*
+*Final Documentation v1.0 | Agentic AI Data Visualization System | May 29, 2026*

@@ -58,28 +58,6 @@ export default function UploadZone({ onUpload, onGenerateReport, generateReportD
     <section className="card">
       <h3>Upload Data Source</h3>
       <p style={{ marginBottom: "8px" }}>Supports CSV, Excel, XML.</p>
-      <div className="upload-name-row">
-        <input
-          id="upload-dataset-name"
-          name="dataset_name"
-          placeholder="Dataset name"
-          autocomplete="off"
-          value={datasetName}
-          onChange={(e) => setDatasetName(e.target.value)}
-        />
-        <button
-          type="button"
-          className="upload-file-btn"
-          onClick={() => {
-            if (inputRef.current) {
-              inputRef.current.value = "";
-            }
-            inputRef.current?.click();
-          }}
-        >
-          Upload File
-        </button>
-      </div>
 
       <div
         className={`upload-zone ${dragging ? "dragging" : ""}`}
@@ -96,17 +74,29 @@ export default function UploadZone({ onUpload, onGenerateReport, generateReportD
           }
         }}
       >
-        <p>Drop your data file here</p>
-        <div className="upload-actions">
-        <button
-          type="button"
-          className={`upload-generate-btn ${generateEnabled ? "is-enabled" : ""}`}
-          onClick={() => onGenerateReport?.()}
-          disabled={!generateEnabled}
-        >
-          Generate Report
-        </button>
+        <div className="upload-name-row">
+          <input
+            id="upload-dataset-name"
+            name="dataset_name"
+            placeholder="Dataset name"
+            autocomplete="off"
+            value={datasetName}
+            onChange={(e) => setDatasetName(e.target.value)}
+          />
+          <button
+            type="button"
+            className="upload-file-btn"
+            onClick={() => {
+              if (inputRef.current) {
+                inputRef.current.value = "";
+              }
+              inputRef.current?.click();
+            }}
+          >
+            Upload File
+          </button>
         </div>
+        <p>Drop your data file here</p>
         <input
           id="upload-file-input"
           name="file_upload"
@@ -117,6 +107,16 @@ export default function UploadZone({ onUpload, onGenerateReport, generateReportD
           style={{ display: "none" }}
           onChange={(e) => handleFileSelection(e.target.files?.[0], e.target)}
         />
+      </div>
+      <div className="upload-actions">
+        <button
+          type="button"
+          className={`upload-generate-btn ${generateEnabled ? "is-enabled" : ""}`}
+          onClick={() => onGenerateReport?.()}
+          disabled={!generateEnabled}
+        >
+          Generate Report
+        </button>
       </div>
       {error && (
         <div className="upload-format-error" role="alert" aria-live="polite">

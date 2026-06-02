@@ -323,16 +323,17 @@ body {
 .upload-zone {
   border: 2px dashed #98b0a7;
   border-radius: 12px;
-  padding: 14px;
+  padding: 10px 12px;
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 5px;
 }
 
 .upload-zone p {
   margin: 0;
-  font-size: 13px;
+  font-size: 12px;
+  line-height: 1.25;
 }
 
 .upload-zone.dragging {
@@ -346,7 +347,7 @@ body {
   gap: 8px;
   width: 100%;
   max-width: 280px;
-  margin: 0 auto;
+  margin: 6px auto 0;
 }
 
 .upload-name-row {
@@ -354,7 +355,7 @@ body {
   grid-template-columns: 1fr auto;
   gap: 8px;
   align-items: center;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 
 .upload-file-btn {
@@ -1276,9 +1277,9 @@ button.danger {
 
 .overview-main-chart-head {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   gap: 10px;
-  align-items: center;
+  align-items: flex-start;
   margin-bottom: 6px;
 }
 
@@ -1304,6 +1305,32 @@ button.danger {
 .overview-main-chart-head h5,
 .overview-main-report-card h5 {
   margin: 0;
+}
+
+.overview-chart-insight {
+  margin: 0 0 8px;
+  display: grid;
+  gap: 6px;
+}
+
+.overview-chart-confidence {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  padding: 3px 9px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #1f4fa8;
+  border: 1px solid rgba(31, 79, 168, 0.3);
+  background: rgba(31, 79, 168, 0.1);
+}
+
+.overview-chart-reason {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.35;
+  color: #38513f;
 }
 
 .overview-main-report-card {

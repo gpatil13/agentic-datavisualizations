@@ -1535,6 +1535,14 @@ export default function App() {
     return "Needs attention";
   };
 
+  const formatConfidence = (value) => {
+    const numeric = Number(value);
+    if (!Number.isFinite(numeric)) return null;
+    const normalized = numeric > 1 ? numeric / 100 : numeric;
+    const bounded = Math.max(0, Math.min(1, normalized));
+    return `${Math.round(bounded * 100)}%`;
+  };
+
   const toFriendlyInsight = (suggestion) => {
     const title = suggestion?.title || "Insight";
     const reason = String(suggestion?.reason || "").trim();
@@ -1547,7 +1555,8 @@ export default function App() {
     };
     return {
       what: title,
-      why: mapped[reason] || (reason ? `${reason.charAt(0).toUpperCase()}${reason.slice(1)}.` : "Helps with faster decisions."),
+      // Keep rationale privacy-safe: show only high-level explanation text.
+      why: mapped[reason] || "Selected using schema compatibility and data-type checks.",
     };
   };
 
@@ -1694,19 +1703,39 @@ export default function App() {
               <div className="overview-main-grid">
                 <div className="overview-main-charts">
                   {overviewMainWidgets.length ? (
-                    overviewMainWidgets.map((widget) => (
-                      <article className="overview-main-chart-card" key={`overview-main-${widget.id}`}>
-                        <div className="overview-main-chart-head">
-                          <div className="chart-head-meta">
-                            <h5>{widget.title}</h5>
-                            <span className="chart-head-tag">{widget.chart_type}</span>
+                    overviewMainWidgets.map((widget) => {
+                      const rationale = String(widget?.config?.reason || "").trim();
+                      const confidenceLabel = formatConfidence(widget?.config?.confidence);
+                      const friendlyInsight = toFriendlyInsight({ title: widget.title, reason: rationale });
+                      const confidenceTooltip = confidenceLabel
+                        ? `AI confidence: ${confidenceLabel}. ${friendlyInsight.why}`
+                        : null;
+                      return (
+                        <article className="overview-main-chart-card" key={`overview-main-${widget.id}`}>
+                          <div className="overview-main-chart-head">
+                            <div className="chart-head-meta">
+                              <h5>{widget.title}</h5>
+                              <span className="chart-head-tag">{widget.chart_type}</span>
+                            </div>
+                            {confidenceLabel && (
+                              <span
+                                className="overview-chart-confidence"
+                                title={confidenceTooltip}
+                                aria-label={confidenceTooltip}
+                              >
+                                {confidenceLabel}
+                              </span>
+                            )}
                           </div>
-                        </div>
-                        <Suspense fallback={<p className="muted">Loading chart...</p>}>
-                          <ChartRenderer widget={widget} data={widgetDataById.get(widget.id)?.current || periodData} />
-                        </Suspense>
-                      </article>
-                    ))
+                          <div className="overview-chart-insight" aria-label="AI chart recommendation details">
+                            <p className="overview-chart-reason">{friendlyInsight.why}</p>
+                          </div>
+                          <Suspense fallback={<p className="muted">Loading chart...</p>}>
+                            <ChartRenderer widget={widget} data={widgetDataById.get(widget.id)?.current || periodData} />
+                          </Suspense>
+                        </article>
+                      );
+                    })
                   ) : (
                     <p className="muted">No main charts are available yet.</p>
                   )}

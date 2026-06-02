@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecommerce_sales generated="2026-05-31" record_count="10" period="2026-05-01 to 2026-05-10">
+  <order>
+    <order_id>ORD-50001</order_id>
+    <order_date>2026-05-01</order_date>
+    <customer_id>CUST-2001</customer_id>
+    <product_id>PRD-3001</product_id>
+    <product_name>Wireless Mouse</product_name>
+    <quantity>2</quantity>
+    <unit_price>25.00</unit_price>
+    <total_amount>50.00</total_amount>
+    <discount_percent>10</discount_percent>
+    <discount_amount>5.00</discount_amount>
+    <net_amount>45.00</net_amount>
+    <payment_method>Credit Card</payment_method>
+    <order_status>Delivered</order_status>
+    <shipping_carrier>FedEx</shipping_carrier>
+    <shipping_type>Standard</shipping_type>
+    <shipping_city>Dallas</shipping_city>
+    <shipping_state>TX</shipping_state>
+    <shipping_zip>75001</shipping_zip>
+    <tracking_number>FDX50001001</tracking_number>
+    <ship_date>2026-05-02</ship_date>
+    <delivery_date>2026-05-04</delivery_date>
+  </order>
+
+  <order>
+    <order_id>ORD-50002</order_id>
+    <order_date>2026-05-02</order_date>
+    <customer_id>CUST-2002</customer_id>
+    <product_id>PRD-3002</product_id>
+    <product_name>Mechanical Keyboard</product_name>
+    <quantity>1</quantity>
+    <unit_price>89.99</unit_price>
+    <total_amount>89.99</total_amount>
+    <discount_percent>0</discount_percent>
+    <discount_amount>0.00</discount_amount>
+    <net_amount>89.99</net_amount>
+    <payment_method>PayPal</payment_method>
+    <order_status>Delivered</order_status>
+    <shipping_carrier>UPS</shipping_carrier>
+    <shipping_type>Express</shipping_type>
+    <shipping_city>Phoenix</shipping_city>
+    <shipping_state>AZ</shipping_state>
+    <shipping_zip>85001</shipping_zip>
+    <tracking_number>UPS50002002</tracking_number>
+    <ship_date>2026-05-02</ship_date>
+    <delivery_date>2026-05-03</delivery_date>
+  </order>
+
+  <order>
+    <order_id>ORD-50003</order_id>
+    <order_date>2026-05-03</order_date>
+    <customer_id>CUST-2003</customer_id>
+    <product_id>PRD-3003</product_id>
+    <product_name>USB-C Hub</product_name>
+    <quantity>3</quantity>
+    <unit_price>29.50</unit_price>
+    <total_amount>88.50</total_amount>
+    <discount_percent>5</discount_percent>
+    <discount_amount>4.43</discount_amount>
+    <net_amount>84.07</net_amount>
+    <payment_method>Apple Pay</payment_method>
+    <order_status>Shipped</order_status>
+    <shipping_carrier>DHL</shipping_carrier>
+    <shipping_type>Standard</shipping_type>
+    <shipping_city>Seattle</shipping_city>
+    <shipping_state>WA</shipping_state>
+    <shipping_zip>98101</shipping_zip>
+    <tracking_number>DHL50003003</tracking_number>
+    <ship_date>2026-05-04</ship_date>
+    <delivery_date></delivery_date>
+  </order>
+
+  <order>
+    <order_id>ORD-50004</order_id>
+    <order_date>2026-05-04</order_date>
+    <customer_id>CUST-2004</customer_id>
+    <product_id>PRD-3004</product_id>
+    <product_name>Gaming Headset</product_name>
+    <quantity>1</quantity>
+    <unit_price>120.00</unit_price>
+    <total_amount>120.00</total_amount>
+    <discount_percent>15</discount_percent>
+    <discount_amount>18.00</discount_amount>
+    <net_amount>102.00</net_amount>
+    <payment_method>Debit Card</payment_method>
+    <order_status>Cancelled</order_status>
+    <shipping_carrier>USPS</shipping_carrier>
+    <shipping_type>Standard</shipping_type>
+    <shipping_city>Miami</shipping_city>
+    <shipping_state>FL</shipping_state>
+    <shipping_zip>33101</shipping_zip>
+    <tracking_number></tracking_number>
+    <ship_date></ship_date>
+    <delivery_date></delivery_date>
+  </order>
+
+  <order>
+    <order_id>ORD-50005</order_id>
+    <order_date>2026-05-05</order_date>
+    <customer_id>CUST-2005</customer_id>
+    <product_id>PRD-3005</product_id>
+    <product_name>Webcam 1080p</product_name>
+    <quantity>2</quantity>
+    <unit_price>55.00</unit_price>
+    <total_amount>110.00</total_amount>
+    <discount_percent>0</discount_percent>
+    <discount_amount>0.00</discount_amount>
+    <net_amount>110.00</net_amount>
+    <payment_method>Google Pay</payment_method>
+    <order_status>Delivered</order_status>
+    <shipping_carrier>Amazon Logistics</shipping_carrier>
+    <shipping_type>Express</shipping_type>
+    <shipping_city>Denver</shipping_city>
+    <shipping_state>CO</shipping_state>
+    <shipping_zip>80014</shipping_zip>
+    <tracking_number>AMZ50005005</tracking_number>
+    <ship_date>2026-05-05</ship_date>
+    <delivery_date>2026-05-06</delivery_date>
+  </order>
+
+  <order>
+    <order_id>ORD-50006</order_id>
+    <order_date>2026-05-06</order_date>
+    <customer_id>CUST-2006</customer_id>
+    <product_id>PRD-3006</product_id>
+    <product_name>Laptop Stand</product_name>
+    <quantity>4</quantity>
+    <unit_price>35.00</unit_price>
+    <total_amount>140.00</total_amount>
+    <discount_percent>20</discount_percent>
+    <discount_amount>28.00</discount_amount>
+    <net_amount>112.00</net_amount>
+    <payment_method>Credit Card</payment_method>
+    <order_status>Delivered</order_status>
+    <shipping_carrier>FedEx</shipping_carrier>
+    <shipping_type>Standard</shipping_type>
+    <shipping_city>Austin</shipping_city>
+    <shipping_state>TX</shipping_state>
+    <shipping_zip>73301</shipping_zip>
+    <tracking_number>FDX50006006</tracking_number>
+    <ship_date>2026-05-07</ship_date>
+    <delivery_date>2026-05-09</delivery_date>
+  </order>
+
+  <order>
+    <order_id>ORD-50007</order_id>
+    <order_date>2026-05-07</order_date>
+    <customer_id>CUST-2007</customer_id>
+    <product_id>PRD-3007</product_id>
+    <product_name>Portable SSD 1TB</product_name>
+    <quantity>1</quantity>
+    <unit_price>139.99</unit_price>
+    <total_amount>139.99</total_amount>
+    <discount_percent>0</discount_percent>
+    <discount_amount>0.00</discount_amount>
+    <net_amount>139.99</net_amount>
+    <payment_method>PayPal</payment_method>
+    <order_status>Shipped</order_status>
+    <shipping_carrier>UPS</shipping_carrier>
+    <shipping_type>Economy</shipping_type>
+    <shipping_city>Chicago</shipping_city>
+    <shipping_state>IL</shipping_state>
+    <shipping_zip>60601</shipping_zip>
+    <tracking_number>UPS50007007</tracking_number>
+    <ship_date>2026-05-08</ship_date>
+    <delivery_date></delivery_date>
+  </order>
+
+  <order>
+    <order_id>ORD-50008</order_id>
+    <order_date>2026-05-08</order_date>
+    <customer_id>CUST-2008</customer_id>
+    <product_id>PRD-3008</product_id>
+    <product_name>Noise Cancelling Earbuds</product_name>
+    <quantity>2</quantity>
+    <unit_price>79.99</unit_price>
+    <total_amount>159.98</total_amount>
+    <discount_percent>12</discount_percent>
+    <discount_amount>19.20</discount_amount>
+    <net_amount>140.78</net_amount>
+    <payment_method>Credit Card</payment_method>
+    <order_status>Delivered</order_status>
+    <shipping_carrier>DHL</shipping_carrier>
+    <shipping_type>Express</shipping_type>
+    <shipping_city>San Diego</shipping_city>
+    <shipping_state>CA</shipping_state>
+    <shipping_zip>92101</shipping_zip>
+    <tracking_number>DHL50008008</tracking_number>
+    <ship_date>2026-05-08</ship_date>
+    <delivery_date>2026-05-09</delivery_date>
+  </order>
+
+  <order>
+    <order_id>ORD-50009</order_id>
+    <order_date>2026-05-09</order_date>
+    <customer_id>CUST-2009</customer_id>
+    <product_id>PRD-3009</product_id>
+    <product_name>Smartphone Tripod</product_name>
+    <quantity>5</quantity>
+    <unit_price>18.00</unit_price>
+    <total_amount>90.00</total_amount>
+    <discount_percent>0</discount_percent>
+    <discount_amount>0.00</discount_amount>
+    <net_amount>90.00</net_amount>
+    <payment_method>Debit Card</payment_method>
+    <order_status>Delivered</order_status>
+    <shipping_carrier>USPS</shipping_carrier>
+    <shipping_type>Standard</shipping_type>
+    <shipping_city>Boston</shipping_city>
+    <shipping_state>MA</shipping_state>
+    <shipping_zip>02108</shipping_zip>
+    <tracking_number>USP50009009</tracking_number>
+    <ship_date>2026-05-10</ship_date>
+    <delivery_date>2026-05-12</delivery_date>
+  </order>
+
+  <order>
+    <order_id>ORD-50010</order_id>
+    <order_date>2026-05-10</order_date>
+    <customer_id>CUST-2010</customer_id>
+    <product_id>PRD-3010</product_id>
+    <product_name>Ergonomic Office Chair Cushion</product_name>
+    <quantity>1</quantity>
+    <unit_price>42.50</unit_price>
+    <total_amount>42.50</total_amount>
+    <discount_percent>8</discount_percent>
+    <discount_amount>3.40</discount_amount>
+    <net_amount>39.10</net_amount>
+    <payment_method>Apple Pay</payment_method>
+    <order_status>Delivered</order_status>
+    <shipping_carrier>Amazon Logistics</shipping_carrier>
+    <shipping_type>Standard</shipping_type>
+    <shipping_city>New York</shipping_city>
+    <shipping_state>NY</shipping_state>
+    <shipping_zip>10001</shipping_zip>
+    <tracking_number>AMZ50010010</tracking_number>
+    <ship_date>2026-05-11</ship_date>
+    <delivery_date>2026-05-13</delivery_date>
+  </order>
+</ecommerce_sales>

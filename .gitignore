@@ -35,3 +35,7 @@ frontend/.lighthouse-seo.json
 frontend/src/test/Report/
 backend/tests/Report/
 tests/Report/
+
+# Generated sample exports
+sample_data/demo_ecommerce_test.xlsx
+sample_data/demo_ecommerce_test.xml

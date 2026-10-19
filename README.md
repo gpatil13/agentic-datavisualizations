@@ -134,10 +134,7 @@ See the docs folder for:
 - Technical report template with citations.
 ## Video Link: To explore the functionality
   
-  [https://github.com/user-attachments/assets/62acbb37-a0b0-4b9e-a06e-e3b5fc0f84f5]
-
-
-
+- https://go.screenpal.com/watch/cO1fhInuXax
 
 
 
